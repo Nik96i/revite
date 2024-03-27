@@ -11,6 +11,7 @@ import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
 // Custom Rules
+import typescriptRules from "./lints/typescript/index.js";
 import stylisticRules from "./lints/stylistic/index.js";
 import reactRules from "./lints/react/index.js";
 
@@ -30,6 +31,22 @@ export default tseslint.config(
                 tsconfigRootDir: import.meta.dirname
             }
         }
+    },
+
+    // TypeScript Rules
+    {
+        files: ["**/*.{ts,tsx}"],
+        languageOptions: {
+            parserOptions: {
+                ecmaFeatures: {
+                    jsx: true
+                }
+            },
+            globals: {
+                ...globals.browser
+            }
+        },
+        rules: typescriptRules
     },
 
     // Stylistic Rules
