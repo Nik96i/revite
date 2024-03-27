@@ -3,15 +3,20 @@
 import eslint from '@eslint/js';
 import tseslint from 'typescript-eslint';
 import globals from "globals";
+import stylistic from '@stylistic/eslint-plugin';
 
 // Plugins
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
+// Custom Rules
+import stylisticRules from "./lints/stylistic/index.js";
+
 export default tseslint.config(
     eslint.configs.recommended,
     ...tseslint.configs.strictTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
+    stylistic.configs["recommended-flat"],
 
     {
         languageOptions: {
@@ -23,6 +28,22 @@ export default tseslint.config(
                 tsconfigRootDir: import.meta.dirname
             }
         }
+    },
+
+    // Stylistic Rules
+    {
+        files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
+        languageOptions: {
+            parserOptions: {
+                ecmaFeatures: {
+                    jsx: true
+                }
+            },
+            globals: {
+                ...globals.browser
+            }
+        },
+        rules: stylisticRules
     },
 
     // React Plugin
