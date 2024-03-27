@@ -4,6 +4,7 @@
   "compilerOptions": {
     // ensure that nobody can accidentally use this config for a build
     "noEmit": true,
+    "strict": true
   },
   "include": [
     // whatever paths you intend to lint

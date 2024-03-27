@@ -84,8 +84,10 @@ export default tseslint.config(
     {
         ignores: [
             "dist",
+            "lints",
             "eslint.config.js",
-            "vite.config.ts"
+            "vite.config.ts",
+            "vite-env.d.ts",
         ]
     }
 );
