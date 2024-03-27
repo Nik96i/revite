@@ -812,7 +812,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/eslint-plugin@npm:^7.4.0":
+"@typescript-eslint/eslint-plugin@npm:7.4.0":
   version: 7.4.0
   resolution: "@typescript-eslint/eslint-plugin@npm:7.4.0"
   dependencies:
@@ -837,7 +837,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@typescript-eslint/parser@npm:^7.4.0":
+"@typescript-eslint/parser@npm:7.4.0":
   version: 7.4.0
   resolution: "@typescript-eslint/parser@npm:7.4.0"
   dependencies:
@@ -2556,8 +2556,6 @@ __metadata:
     "@types/node": "npm:^20.11.30"
     "@types/react": "npm:^18.2.66"
     "@types/react-dom": "npm:^18.2.22"
-    "@typescript-eslint/eslint-plugin": "npm:^7.4.0"
-    "@typescript-eslint/parser": "npm:^7.4.0"
     "@vitejs/plugin-react": "npm:^4.2.1"
     eslint: "npm:^8.57.0"
     eslint-plugin-react-hooks: "npm:^4.6.0"
@@ -2565,6 +2563,7 @@ __metadata:
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
     typescript: "npm:^5.4.3"
+    typescript-eslint: "npm:^7.4.0"
     vite: "npm:^5.2.6"
   languageName: unknown
   linkType: soft
@@ -2887,6 +2886,22 @@ __metadata:
   version: 0.20.2
   resolution: "type-fest@npm:0.20.2"
   checksum: 10c0/dea9df45ea1f0aaa4e2d3bed3f9a0bfe9e5b2592bddb92eb1bf06e50bcf98dbb78189668cd8bc31a0511d3fc25539b4cd5c704497e53e93e2d40ca764b10bfc3
+  languageName: node
+  linkType: hard
+
+"typescript-eslint@npm:^7.4.0":
+  version: 7.4.0
+  resolution: "typescript-eslint@npm:7.4.0"
+  dependencies:
+    "@typescript-eslint/eslint-plugin": "npm:7.4.0"
+    "@typescript-eslint/parser": "npm:7.4.0"
+    "@typescript-eslint/utils": "npm:7.4.0"
+  peerDependencies:
+    eslint: ^8.56.0
+  peerDependenciesMeta:
+    typescript:
+      optional: true
+  checksum: 10c0/e630043bc93537a601397dd059cd41504ce6df4613d703c9b59b94e4bbf8e24a0f06bfaed86aae940e832f1147cf018b6176013b5b6d989551ab190720398e30
   languageName: node
   linkType: hard
 
