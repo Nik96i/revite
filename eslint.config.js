@@ -6,11 +6,13 @@ import globals from "globals";
 import stylistic from '@stylistic/eslint-plugin';
 
 // Plugins
+import react from "eslint-plugin-react";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 
 // Custom Rules
 import stylisticRules from "./lints/stylistic/index.js";
+import reactRules from "./lints/react/index.js";
 
 export default tseslint.config(
     eslint.configs.recommended,
@@ -50,6 +52,7 @@ export default tseslint.config(
     {
         files: ["**/*.{js,jsx,mjs,cjs,ts,tsx}"],
         plugins: {
+            react: react,
             "react-hooks": reactHooks,
             "react-refresh": reactRefresh
         },
@@ -69,6 +72,8 @@ export default tseslint.config(
             }
         },
         rules: {
+            ...reactRules,
+            // ...react.configs.recommended.rules,
             ...reactHooks.configs.recommended.rules,
 
             // Enforce Rules of Hooks
