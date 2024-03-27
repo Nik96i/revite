@@ -140,7 +140,12 @@ export default {
 
   // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-bind.md
   // Disallow .bind() or arrow functions in JSX props
-  "react/jsx-no-bind": ["error"],
+  "react/jsx-no-bind": [
+    "error",
+    {
+      allowArrowFunctions: true
+    }
+  ],
 
   // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-comment-textnodes.md
   // Disallow comments from being inserted as text nodes
@@ -160,7 +165,7 @@ export default {
 
   // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-literals.md
   // Disallow usage of string literals in JSX
-  "react/jsx-no-literals": ["error"],
+  "react/jsx-no-literals": ["off"],
 
   // https://github.com/jsx-eslint/eslint-plugin-react/blob/master/docs/rules/jsx-no-script-url.md
   // Disallow usage of javascript: URLs

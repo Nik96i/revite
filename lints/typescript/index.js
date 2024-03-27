@@ -85,7 +85,14 @@ export default {
 
   // Enforce naming conventions for everything across a codebase.
   // https://typescript-eslint.io/rules/naming-convention
-  "@typescript-eslint/naming-convention": ["error"],
+  // TODO: We can split this rule. for components it enforces PascalCase and functions camelCase
+  "@typescript-eslint/naming-convention": [
+    "error",
+    {
+      selector: "function",
+      format: ["PascalCase", "camelCase"]
+    }
+  ],
 
   // Disallow duplicate class members.
   // https://typescript-eslint.io/rules/no-dupe-class-members
