@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+/* Import Custom Fonts */
+@import "font-roboto.css";
+@import "font-iran.css";
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;

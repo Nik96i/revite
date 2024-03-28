@@ -17,7 +17,8 @@ function App(): ReactElement {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Vite + React</h1>
+      <h3 className="font-roboto">Hello World</h3>
+      <h3 className="font-iran">سلام دنیا</h3>
       <div className="card">
         <button
           type="button"
