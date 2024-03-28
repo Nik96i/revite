@@ -19,7 +19,18 @@ export default tseslint.config(
     eslint.configs.recommended,
     ...tseslint.configs.strictTypeChecked,
     ...tseslint.configs.stylisticTypeChecked,
-    stylistic.configs["recommended-flat"],
+    stylistic.configs.customize({
+        jsx: true,
+        arrowParens: true,
+        flat: true,
+        blockSpacing: true,
+        braceStyle: 'stroustrup',
+        commaDangle: 'always-multiline',
+        indent: 2,
+        semi: true,
+        quotes: 'double',
+        quoteProps: 'always'
+    }),
 
     {
         languageOptions: {
@@ -46,7 +57,9 @@ export default tseslint.config(
                 ...globals.browser
             }
         },
-        rules: typescriptRules
+        rules: {
+            ...typescriptRules
+        }
     },
 
     // Stylistic Rules
@@ -62,7 +75,9 @@ export default tseslint.config(
                 ...globals.browser
             }
         },
-        rules: stylisticRules
+        rules: {
+            ...stylisticRules
+        }
     },
 
     // React Plugin
@@ -107,6 +122,8 @@ export default tseslint.config(
         ignores: [
             "dist",
             "lints",
+            "tailwind.config.js",
+            "postcss.config.js",
             "eslint.config.js",
             "vite.config.ts",
             "vite-env.d.ts",
