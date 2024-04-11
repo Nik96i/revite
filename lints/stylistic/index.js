@@ -406,7 +406,7 @@ export default {
 
   // https://eslint.style/rules/default/quote-props
   // Require quotes around object literal property names
-  "@stylistic/quote-props": ["warn"],
+  "@stylistic/quote-props": ["warn", "as-needed"],
 
   // https://eslint.style/rules/default/quotes
   // Enforce the consistent use of either backticks, double, or single quotes

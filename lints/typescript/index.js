@@ -81,7 +81,7 @@ export default {
 
   // Enforce using a particular method signature syntax.
   // https://typescript-eslint.io/rules/method-signature-style
-  "@typescript-eslint/method-signature-style": ["error", "method"],
+  "@typescript-eslint/method-signature-style": ["error"],
 
   // Enforce naming conventions for everything across a codebase.
   // https://typescript-eslint.io/rules/naming-convention
