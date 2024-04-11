@@ -7,12 +7,17 @@ import type { RouteObject } from "react-router-dom";
 
 // Views
 // TODO: We can make them lazy
+import { Home } from "@/views/home";
 import { NotFound } from "@/views/notFound";
 
 export function AppRoutes(): ReactElement {
   const { isLoggedIn } = useAuthStore();
 
   const commonRoutes = [
+    {
+      path: "/",
+      element: <Home />,
+    },
     {
       path: "*",
       element: <NotFound />,
