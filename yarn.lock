@@ -244,6 +244,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@babel/runtime@npm:^7.23.2, @babel/runtime@npm:^7.23.9":
+  version: 7.24.5
+  resolution: "@babel/runtime@npm:7.24.5"
+  dependencies:
+    regenerator-runtime: "npm:^0.14.0"
+  checksum: 10c0/05730e43e8ba6550eae9fd4fb5e7d9d3cb91140379425abcb2a1ff9cebad518a280d82c4c4b0f57ada26a863106ac54a748d90c775790c0e2cd0ddd85ccdf346
+  languageName: node
+  linkType: hard
+
 "@babel/template@npm:^7.22.15, @babel/template@npm:^7.24.0":
   version: 7.24.0
   resolution: "@babel/template@npm:7.24.0"
@@ -2635,6 +2644,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"html-parse-stringify@npm:^3.0.1":
+  version: 3.0.1
+  resolution: "html-parse-stringify@npm:3.0.1"
+  dependencies:
+    void-elements: "npm:3.1.0"
+  checksum: 10c0/159292753d48b84d216d61121054ae5a33466b3db5b446e2ffc093ac077a411a99ce6cbe0d18e55b87cf25fa3c5a86c4d8b130b9719ec9b66623259000c72c15
+  languageName: node
+  linkType: hard
+
 "http-cache-semantics@npm:^4.1.1":
   version: 4.1.1
   resolution: "http-cache-semantics@npm:4.1.1"
@@ -2659,6 +2677,15 @@ __metadata:
     agent-base: "npm:^7.0.2"
     debug: "npm:4"
   checksum: 10c0/bc4f7c38da32a5fc622450b6cb49a24ff596f9bd48dcedb52d2da3fa1c1a80e100fb506bd59b326c012f21c863c69b275c23de1a01d0b84db396822fdf25e52b
+  languageName: node
+  linkType: hard
+
+"i18next@npm:^23.11.5":
+  version: 23.11.5
+  resolution: "i18next@npm:23.11.5"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.2"
+  checksum: 10c0/b0bec64250a3e529d4c51e2fc511406a85c5dde3d005d3aabe919551ca31dfc0a8f5490bf6e44649822e895a1fa91a58092d112367669cd11b2eb89e6ba90d1a
   languageName: node
   linkType: hard
 
@@ -3831,6 +3858,24 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-i18next@npm:^14.1.1":
+  version: 14.1.1
+  resolution: "react-i18next@npm:14.1.1"
+  dependencies:
+    "@babel/runtime": "npm:^7.23.9"
+    html-parse-stringify: "npm:^3.0.1"
+  peerDependencies:
+    i18next: ">= 23.2.3"
+    react: ">= 16.8.0"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 10c0/d6da148d5dd1635f57d7a85bdd5c6e1f1404982112358a5efa9f6f47d505a00e4650237d5fc94b4381dcb336c134d500268a7157e06e2b2f0293a2bcd7ec2812
+  languageName: node
+  linkType: hard
+
 "react-is@npm:^16.13.1":
   version: 16.13.1
   resolution: "react-is@npm:16.13.1"
@@ -3908,6 +3953,13 @@ __metadata:
     globalthis: "npm:^1.0.3"
     which-builtin-type: "npm:^1.1.3"
   checksum: 10c0/baf4ef8ee6ff341600f4720b251cf5a6cb552d6a6ab0fdc036988c451bf16f920e5feb0d46bd4f530a5cce568f1f7aca2d77447ca798920749cfc52783c39b55
+  languageName: node
+  linkType: hard
+
+"regenerator-runtime@npm:^0.14.0":
+  version: 0.14.1
+  resolution: "regenerator-runtime@npm:0.14.1"
+  checksum: 10c0/1b16eb2c4bceb1665c89de70dcb64126a22bc8eb958feef3cd68fe11ac6d2a4899b5cd1b80b0774c7c03591dc57d16631a7f69d2daa2ec98100e2f29f7ec4cc4
   languageName: node
   linkType: hard
 
@@ -4013,9 +4065,11 @@ __metadata:
     eslint-plugin-react-hooks: "npm:^4.6.0"
     eslint-plugin-react-refresh: "npm:^0.4.6"
     eslint-plugin-tailwindcss: "npm:^3.15.1"
+    i18next: "npm:^23.11.5"
     postcss: "npm:^8.4.38"
     react: "npm:^18.2.0"
     react-dom: "npm:^18.2.0"
+    react-i18next: "npm:^14.1.1"
     react-router-dom: "npm:^6.22.3"
     tailwindcss: "npm:^3.4.3"
     typescript: "npm:^5.4.5"
@@ -4748,6 +4802,13 @@ __metadata:
   bin:
     vite: bin/vite.js
   checksum: 10c0/b5717bb00c2570c08ff6d8ed917655e79184efcafa9dd62d52eea19c5d6dfc5a708ec3de9ebc670a7165fc5d401c2bdf1563bb39e2748d8e51e1593d286a9a13
+  languageName: node
+  linkType: hard
+
+"void-elements@npm:3.1.0":
+  version: 3.1.0
+  resolution: "void-elements@npm:3.1.0"
+  checksum: 10c0/0b8686f9f9aa44012e9bd5eabf287ae0cde409b9a2854c5a2335cb83920c957668ac5876e3f0d158dd424744ac411a7270e64128556b451ed3bec875ef18534d
   languageName: node
   linkType: hard
 
