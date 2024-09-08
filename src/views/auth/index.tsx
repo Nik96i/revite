@@ -3,5 +3,5 @@ import Register from "@/views/auth/components/Register.tsx";
 
 export {
   Login,
-  Register,
+  Register
 };

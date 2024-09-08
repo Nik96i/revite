@@ -22,13 +22,13 @@ const useAuthStore = create<AuthStore>()(
       },
       logout: () => {
         set(() => ({ token: null }));
-      },
+      }
     }),
     {
       name: "authStore",
-      storage: createJSONStorage(() => localStorage),
-    },
-  ),
+      storage: createJSONStorage(() => localStorage)
+    }
+  )
 );
 
 export default useAuthStore;

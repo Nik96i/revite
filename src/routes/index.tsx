@@ -16,12 +16,12 @@ export function AppRoutes(): ReactElement {
   const commonRoutes = [
     {
       path: "/",
-      element: <Home />,
+      element: <Home />
     },
     {
       path: "*",
-      element: <NotFound />,
-    },
+      element: <NotFound />
+    }
   ];
 
   const routes: RouteObject[] = isLoggedIn() ? protectedRoutes : publicRoutes;

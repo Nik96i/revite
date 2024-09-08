@@ -18,14 +18,14 @@ export const publicRoutes: RouteObject[] = [
         children: [
           {
             path: "register",
-            element: <RegisterView />,
+            element: <RegisterView />
           },
           {
             path: "login",
-            element: <LoginView />,
-          },
-        ],
-      },
-    ],
-  },
+            element: <LoginView />
+          }
+        ]
+      }
+    ]
+  }
 ];

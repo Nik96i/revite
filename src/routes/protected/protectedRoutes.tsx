@@ -14,8 +14,8 @@ export const protectedRoutes: RouteObject[] = [
     children: [
       {
         path: "/users",
-        element: <UsersView />,
-      },
-    ],
-  },
+        element: <UsersView />
+      }
+    ]
+  }
 ];

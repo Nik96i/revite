@@ -1,7 +1,7 @@
-import type {ReactElement, ReactNode} from "react";
+import type { ReactElement, ReactNode } from "react";
 
 interface Props {
-    children: ReactNode;
+  readonly children: ReactNode;
 }
 
 export default function AppLayout({ children }: Props): ReactElement {

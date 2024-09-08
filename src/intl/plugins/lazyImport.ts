@@ -75,7 +75,7 @@ const lazyImport: BackendModule = {
 
   create: function (_languages, _namespace, _key, _fallbackValue) {
     /* save the missing translation */
-  },
+  }
 };
 
 export default lazyImport;
