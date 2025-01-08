@@ -23,7 +23,7 @@ dist-ssr
 *.sln
 *.sw?
 
-# Yarn (when not using Zero-Installs)
+# Yarn not using Zero-Installs
 .pnp.*
 .yarn/*
 !.yarn/patches
