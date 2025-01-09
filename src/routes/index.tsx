@@ -1,9 +1,9 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router";
 import useAuthStore from "@/stores/useAuthStore.ts";
 import { publicRoutes } from "@/routes/public/publicRoutes.tsx";
 import { protectedRoutes } from "@/routes/protected/protectedRoutes.tsx";
 import type { ReactElement } from "react";
-import type { RouteObject } from "react-router-dom";
+import type { RouteObject } from "react-router";
 
 // Views
 // TODO: We can make them lazy
