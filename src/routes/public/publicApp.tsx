@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet } from "react-router";
 import type { ReactElement } from "react";
 import { Suspense } from "react";
 
